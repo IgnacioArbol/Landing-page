@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Epic Games</title>
+        <meta charset="utf-8" lang="en">
+        <link rel="stylesheet" href="general.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="navbar">
+            <div id="divlogo"><img class="logo" src="./images/logo.svg"                         ></div>
+            <div id="derecha">
+                <div id="divlogin"><img id="login" src="./images/nacho1.png"></div>
+                <div id="divcarrito"><img id="carrito" src="./images/1170678.svg"></div>
+            </div>
+        </header>
+
+        <div id="contenedor">
+            <div id="hero">
+                <div id="heroText"><p>Atomic Heart</p> combination of surreal, apocalypse, futuristic, and modern, really weird but... surprisingly they all come together greatly here</div>
+                <video autoplay muted loop id="myVideo" height="500px">
+                    <source src="./images/trailer.mp4" type="video/mp4">
+                    
+                  </video>
+            </div>
+            <div id="contenedor formulario"></div>
+                <div id="descripcion">
+                    <h1>THE BEST WAY TO PLAY YOUR FAVORITE GAMES</h1>
+                    <p>Epic Games Store gives you a free game every week. Come back often for the exclusive offers. Download a free game or join a free-to-play game community today.</p>
+                    <p>If you really want us to notify you so that you do not miss any game, fill in the form on the right to obtain the benefits </p>
+                </div>
+                <div><form>
+                    <form >
+                        <label class="formulario" >First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+                    
+                        <label class="formulario">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." disabled>
+                        
+                        <label class="formulario">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email.." disabled>
+
+                        <label class="formulario">Country</label>
+                        <input type="text" id="country" name="country" placeholder="Your country.." disabled>
+
+                        <label class="formulario">Favorite Games</label>
+                        <select id="juegos" class="formulario" name="juegos" disabled>
+                          <option value="fps">First Person Shooter</option>
+                          <option value="moba">MOBA</option>
+                          <option value="deportes">Sports</option>
+                          <option value="simulacion">Simulation</option>
+                          <option value="retro">Retro</option>
+                          <option value="carreras">Races</option>
+                        </select>
+
+                    
+                        <input class="formulario" id="submit"type="submit" value="Submit" disabled>
+                      </form>
+                </form></div>
+            </div>
+            <div id="abajo">
+                <div id="productos">
+                    <div class="divproducto">
+                        <p id="nombreproducto0" class="nombreproducto"></p>
+                        <div id="imagenproducto0" class="imagenproducto"></div>
+                        <p id="precioproducto0" class="precioproducto"></p>
+                    </div>
+                    <div class="divproducto">
+                        <p id="nombreproducto1" class="nombreproducto"></p>
+                        <div id="imagenproducto1" class="imagenproducto"></div>
+                        <p id="precioproducto1" class="precioproducto"></p>
+                    </div>
+                    <div class="divproducto">
+                        <p id="nombreproducto2" class="nombreproducto"></p>
+                        <div id="imagenproducto2" class="imagenproducto"></div>
+                        <p id="precioproducto2" class="precioproducto"></p>
+                    </div>
+                </div>
+                
+                <div id="testimonios">
+                    <div id="opiniones"><h2>Opiniones</h2><button id="cambiar">Cambiar de vista</button></div>
+                    <div class="contenedortestimonios">
+                    <div class="divtestimonios">
+                        <p id="nombretestimonio0" class="nombretestimonio"></p>
+                        <div id="imagentestimonio0" class="imagentestimonio"></div>
+                        <p id="fecha0" class="fecha"></p>
+                        <p id="textotestimonio0" class="textotestimonio"></p>
+                    </div>
+                    <div class="divtestimonios">
+                        <p id="nombretestimonio1" class="nombretestimonio"></p>
+                        <div id="imagentestimonio1" class="imagentestimonio"></div>
+                        <p id="fecha1" class="fecha"></p>
+                        <p id="textotestimonio1" class="textotestimonio"></p>
+                    </div>
+                    <div class="divtestimonios">
+                        <p id="nombretestimonio2" class="nombretestimonio"></p>
+                        <div id="imagentestimonio2" class="imagentestimonio"></div>
+                        <p id="fecha2" class="fecha"></p>
+                        <p id="textotestimonio2" class="textotestimonio"></p>
+                    </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <footer>
+            <div id="redessociales">
+                <div id="facebook" class="redes"><img src="images/fb.png"></div>
+                <div id="twitter" class="redes"><img src="images/tt.png"></div>
+                <div id="instagram" class="redes"><img src="images/inst.png"></div>
+                <div id="casa" class="redes" ><a href="#navbar"><img src="./images/hogar.png" width="40px"></a></div>
+                
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

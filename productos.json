@@ -1,0 +1,7 @@
+{
+    "productos":[
+        { "nombre":"CyberPunk", "precio":"50$", "imagen":"https://uvejuegos.com/img/caratulas/48530/cyberpunk-2077-201961217172698_1.jpg"},
+        { "nombre":"Crash Bandicoot", "precio":"25$","imagen":"https://media.vandal.net/m/86915/crash-bandicoot-4-its-about-time-20206221703232_1.jpg"},
+        { "nombre":"Grand Theft Auto San Andreas", "precio":"3$", "imagen":"https://as.com/meristation/imagenes/2004/07/09/noticia/1089352800_780820_1533308742_sumario_normal.jpg"}
+    ]
+}

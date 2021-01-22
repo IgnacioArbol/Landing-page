@@ -1,0 +1,803 @@
+html{
+    background-color: rgb(175, 175, 175);
+    width: 100vw;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    margin:0px;
+    width: 100vw;
+}
+
+a img:hover{
+    filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+}
+#opiniones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border-bottom: 2px solid grey;
+    height: 100px;
+}
+#cambiar{
+    flex-basis:50 ;
+    margin:auto;
+    height: 20px;
+}
+h1{
+    margin-left: 50px;
+}
+.contenedortestimonios{
+    display: grid;
+}
+
+/*/ animations/*/
+#productos div {
+    opacity: 0;
+}
+
+@keyframes animation {
+    100% {
+      opacity: 1;
+    }
+}
+
+#productos.animate div {
+    animation: animation 2s forwards;
+}
+
+#testimonios div {
+    opacity: 0;
+}
+
+@keyframes animation {
+    100% {
+      opacity: 1;
+    }
+}
+
+#testimonios.animate div {
+    animation: animation 1.5s forwards;
+}
+.divproducto{
+    transition: all .2s ease-in-out;
+    
+}
+.divproducto:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+.divtestimonios{
+    transition: all .2s ease-in-out;
+}
+.divtestimonios:hover {
+    transform: scale(1.1);
+    border: 1px solid grey;
+    z-index: 2;
+}
+/*/ /*/
+
+@media screen and (max-width:568px){
+    body{
+        display: grid;
+        grid-template-columns: 100vw;
+    
+    }
+    header{
+        background-color: rgb(202, 202, 202);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border-bottom: 3px solid black;
+    }
+    #divlogo{
+        width: 100%;
+        display:flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #divlogo:hover{
+        background-color: rgb(175, 175, 175);
+        filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+    }
+    .logo{
+        height: 130px;
+    }
+    
+    #derecha{
+        width: 100%;
+    }
+    #divlogin{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    #divlogin:hover{
+        background-color:rgb(175, 175, 175);
+        filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+    }
+    #login{
+        height: 80px;
+    }
+    #carrito{
+        align-self: center;
+        height: 60px;
+    }
+    #divcarrito{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 90px;
+    }
+    #divcarrito:hover{
+        background-color:rgb(175, 175, 175);
+        filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+    }
+    footer{
+       height: 100px;
+    }
+    
+    
+    #contenedor{
+        display:grid;
+    }
+    #hero{
+        padding: 0px;
+        margin: 0px;
+        height: 500px;
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid black;
+        
+    }
+    #heroText{
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+        max-width: 300px;
+        z-index: 2;
+        background-color:rgba(175, 175, 175,0.5);;
+        padding: 20px;
+        border-radius: 25px;
+        border: 2px solid black;
+        font-size: 20px;
+    }
+    #heroText p{
+        opacity: 1;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+    #myVideo{   
+        object-fit: cover;
+        filter:blur(2px);
+        width: 100vw;
+    }
+    #descripcion{
+        background: rgb(41,59,156);
+        background: radial-gradient(circle, rgba(41,59,156,1) 0%, rgba(54,54,54,1) 92%);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        color: white;
+        max-width: 100%;
+        margin: 15px;
+        padding: 10px;
+        padding-left: 30px;
+    }
+    
+
+    form{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        margin: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .formulario{
+        margin: 10px 30px 10px 30px;
+    }
+    input{
+        margin: 10px 30px 10px 30px;
+    }
+    footer{
+        width: 100vw;
+        background-color: rgb(27, 27, 27);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+        
+    }
+    #redessociales{
+        max-width:100vw;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        
+    }
+    .redes img{
+        height: 40px;
+        margin: 0px 30px;
+    }
+    #productos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .divproducto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        padding: 20px 0px;
+        
+    }
+    .divproducto:hover{
+        background-color: black;
+    }
+    .nombreproducto{
+        grid-column:2 ;
+        margin: auto;
+    }
+    .imagenproducto{
+        grid-column: 1;
+        grid-row: 1/2;
+        margin:auto;
+        
+    }
+    
+    .precioproducto{
+        margin: auto;
+    }
+    #testimonios{
+        background-color:  rgb(204, 202, 202);
+        
+    }
+    #opiniones h2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+        .divtestimonios{
+            display: grid;
+            text-align: left;
+            grid-template-columns: 150px 1fr 80px;
+            grid-template-rows: 30px 1fr;
+            background-color: rgb(204, 202, 202);
+            color: black;
+            padding: 20px 0px;
+            
+        }
+        .imagentestimonio{
+            grid-row: 1/3;
+            border-radius: 100%;
+            display:flex;
+            height:100px;
+            width: 100px;
+            margin-left: auto;
+        }
+        .imagentestimonio img{
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        .fecha{
+            color: rgb(85, 85, 85);
+        }
+      
+    
+}
+@media screen and (min-width:568px) and (max-width: 769px){
+    body{
+       display: grid;
+       
+
+
+    }
+    header{
+        width: 100vw;
+        height: 100px;
+        background-color: rgb(202, 202, 202);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        border-bottom: 3px solid black;
+        
+    }
+    #divlogo{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #divlogo:hover{
+        filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+    }
+    .logo{
+        height: 60px;
+    }
+    
+    #derecha{
+        display: flex;
+        margin-right: 30px;
+        height: 60px;
+    }
+    #divlogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 30px;
+        
+    }
+    
+    #login{
+        height: 60px;
+    }
+    #carrito{
+        align-self: center;
+        height: 40px;
+    }
+    #divcarrito{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    #divcarrito:hover{
+        filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+    }
+    #contenedor{
+        width: 100vw;
+    } 
+    #hero{
+        grid-column: 1/3;
+        width: 100vw;
+       padding: 0px;
+       margin: 0px;
+       
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-bottom: 2px solid black;
+       
+   }
+   #heroText{
+       position: absolute;
+       max-width: 300px;
+       z-index: 2;
+       background-color:rgba(175, 175, 175,0.5);;
+       padding: 20px;
+       border-radius: 60px;
+       box-shadow: 0px 0px 10px rgba(175, 175, 175,0.5);
+       font-size: 20px;
+   }
+   #heroText p{
+       opacity: 1;
+       font-size: 50px;
+       text-align: center;
+       font-weight: bold;
+
+   }
+   #myVideo{   
+       object-fit: cover;
+       filter:blur(2px);
+       width: 100vw;
+      
+   }
+    #descripcion{
+        background: rgb(41,59,156);
+        background: radial-gradient(circle, rgba(41,59,156,1) 0%, rgba(54,54,54,1) 92%);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        color: white;
+        margin: 40px;
+        padding: 30px 50px 30px 50px;
+        padding-left: 50px;
+        
+    }
+    #descripcion h2{
+        padding-bottom: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        margin: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .formulario{
+        margin: 10px 30px 10px 30px;
+        
+    }
+    input{
+        margin: 10px 30px 10px 30px;
+        width: 40vw;
+        text-align: center;
+    }
+    footer{
+        width: 100vw;
+        background-color: rgb(27, 27, 27);
+        
+         
+    }
+    #redessociales{
+        width: 100vw;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .redes img{
+        height: 40px;
+        
+    }
+    #abajo{
+        display: flex;
+        flex-direction: column ;
+        flex-wrap: wrap;
+    }
+    #productos{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .divproducto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        padding: 20px 0px;
+        
+    }
+    .divproducto:hover{
+        background-color: black;
+    }
+    .nombreproducto{
+        grid-column:2 ;
+        margin: auto;
+    }
+    .imagenproducto{
+        grid-column: 1;
+        grid-row: 1/2;
+        margin:auto;
+        
+    }
+    .precioproducto{
+        margin: auto;
+    }
+    #productos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .divproducto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        padding: 20px 0px;
+        
+    }
+    .divproducto:hover{
+        background-color: black;
+    }
+    .nombreproducto{
+        grid-column:2 ;
+        margin: auto;
+    }
+    .imagenproducto{
+        grid-column: 1;
+        grid-row: 1/2;
+        margin:auto;
+        
+    }
+    .precioproducto{
+        margin: auto;
+        font-size: 20px;
+    }
+    #testimonios{
+        background-color:  rgb(204, 202, 202);
+        text-align: center;
+        width: 100vw;
+    }
+    #testimonios h2{
+        font-weight: bold;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+
+        .divtestimonios{
+            display: grid;
+            text-align: left;
+            grid-template-columns: 150px 1fr 80px;
+            grid-template-rows: 30px 1fr;
+            background-color: rgb(204, 202, 202);
+            color: black;
+            padding: 20px 0px;
+            
+            
+        }
+        .imagentestimonio{
+            margin-left:auto;
+            grid-row: 1/3;
+            display:flex;
+            height:100px;
+            width: 100px;
+            
+        }
+        .imagentestimonio img{
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        .fecha{
+            color: rgb(85, 85, 85);
+        }
+    
+    
+    
+}
+@media screen and (min-width:769px){
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        
+
+ 
+     }
+     header{
+         width: 100vw;
+         background-color: rgb(202, 202, 202);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         border-radius: 10px;
+         border-bottom: 3px solid black;
+         
+     }
+     #divlogo{
+         display:flex;
+         align-content: center;
+         justify-content: center;
+     }
+     #divlogo:hover{
+         filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+     }
+     .logo{
+         height: 60px;
+     }
+     
+     #derecha{
+         display: flex;
+         margin-right: 30px;
+         height: 60px;
+     }
+     #divlogin{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         margin-right: 30px;
+         
+     }
+     
+     #login{
+         height: 60px;
+     }
+     #carrito{
+         align-self: center;
+         height: 40px;
+     }
+     #divcarrito{
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         width: 100%;
+     }
+     #divcarrito:hover{
+         filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(135deg) brightness(106%) contrast(101%);
+     } 
+     #hero{
+         grid-column: 1/3;
+        padding: 0px;
+        margin: 0px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid black;
+        
+    }
+    #heroText{
+        position: absolute;
+        max-width: 300px;
+        z-index: 2;
+        background-color:rgba(175, 175, 175,0.5);;
+        padding: 20px;
+        border-radius: 60px;
+        box-shadow: 0px 0px 10px rgba(175, 175, 175,0.5);
+        font-size: 20px;
+    }
+    #heroText p{
+        opacity: 1;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+    #myVideo{   
+        object-fit: cover;
+        filter:blur(2px);
+        width: 100vw;
+        height: 100vh;
+    }
+    #contenedor{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+    }
+    #descripcion{
+        grid-column: 1/2;
+        background: rgb(41,59,156);
+        background: radial-gradient(circle, rgba(41,59,156,1) 0%, rgba(54,54,54,1) 92%);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        color: white;
+        margin: 40px;
+        align-self: center;
+        padding: 30px 50px 30px 50px;
+        padding-left: 50px;
+        
+        
+    }
+    
+    #descripcion p{
+        text-align: center;
+    }
+    form{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        align-self: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        margin: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .formulario{
+        margin: 10px 30px 10px 30px;
+        
+        
+    }
+    input{
+        margin: 10px 30px 10px 30px;
+        width: 20vw;
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        background-color: rgb(27, 27, 27);
+        
+        padding-left: 30px ;
+    }
+    #redessociales{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+    }
+    .redes img{
+        height: 40px;
+        margin: 0px 20px;
+    }
+    #casa{
+        margin-left: auto;
+        padding-right: 40px;
+    }
+    #abajo{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    #productos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr ;
+        flex-basis: 50;
+        height: 100%;
+    }
+    .divproducto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(37, 37, 37);
+        color: white;
+        padding: 20px 0px;
+        
+    }
+    .divproducto:hover{
+        background-color: black;
+    }
+    .nombreproducto{
+        grid-column:2 ;
+        margin: auto;
+    }
+    .imagenproducto{
+        grid-column: 1;
+        grid-row: 1/2;
+        margin:auto;
+        
+    }
+    .precioproducto{
+        margin: auto;
+    }
+    #testimonios{
+        background-color:  rgb(204, 202, 202);
+        text-align: center;
+        
+    }
+    #testimonios h2{
+        font-weight: bold;
+        font-size: 30px;
+        
+        padding-bottom: 30px;
+        
+    }
+    .contenedortestimonios{
+        display: grid;
+        
+    }
+        .divtestimonios{
+            display: grid;
+            text-align: left;
+            grid-template-columns: 150px 1fr 80px;
+            grid-template-rows: 30px 1fr;
+            background-color: rgb(204, 202, 202);
+            color: black;
+            padding: 20px 0px;
+            
+            
+        }
+        .imagentestimonio{
+            margin-left:auto;
+            grid-row: 1/3;
+            display:flex;
+            height:100px;
+            width: 100px;
+            
+        }
+        .imagentestimonio img{
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        .fecha{
+            color: rgb(85, 85, 85);
+        }
+
+}
