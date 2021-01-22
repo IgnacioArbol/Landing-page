@@ -32,6 +32,14 @@ h1{
 .contenedortestimonios{
     display: grid;
 }
+.subscribirse{
+    height: 50px;
+    padding: 0px 30px;
+    color:white;
+    background: rgb(41,59,156);
+    background: radial-gradient(circle, rgba(41,59,156,1) 0%, rgba(54,54,54,1) 92%);
+    border-radius: 15px;
+}
 
 /*/ animations/*/
 #productos div {
@@ -660,6 +668,11 @@ h1{
         display: grid;
         grid-template-columns: 50vw 50vw;
     }
+    #contenedorformulario{
+        margin: 100px 0px;
+        margin-bottom: 100px;
+
+    }
     #descripcion{
         grid-column: 1/2;
         background: rgb(41,59,156);
@@ -726,6 +739,8 @@ h1{
         display: grid;
         width: 100vw;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 300px;
+        margin-top: 250px;
     }
     #productos{
         display: grid;
