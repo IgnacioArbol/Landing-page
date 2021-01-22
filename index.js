@@ -69,7 +69,11 @@ function productos(){
             $("div#imagenproducto"+i.toString()).prepend(`<img id="imagen1" src="${productos.productos[i].imagen}" alt="${productos.productos[i].nombre}" height="100px""/>`);
             $("p#precioproducto"+i.toString()).text(productos.productos[i].precio);
          }
-      }
+      },
+      error: function(){
+         console.log("Ups, parece que ha ocurrido un error, se intentara la reconexion en 5 segundos");
+         setTimeout(testimonios, 5000);
+     }
    })
 }
 function testimonios(){
@@ -87,7 +91,11 @@ function testimonios(){
             $("p#textotestimonio"+i.toString()).text(testimonios.testimonios[aleatorio].texto);
          }
          
-      }
+      },
+      error: function(){
+         console.log("Ups, parece que ha ocurrido un error, se intentara la reconexion en 5 segundos");
+         setTimeout(testimonios, 5000);
+     }
    })
    setTimeout(testimonios,10000);
 }
@@ -175,7 +183,7 @@ $.ajax({
   },
   error: function(err)
   {
-    console.log("Request failed, error= " + err);
+    console.log("Ups, parece que ha ocurrido un error, se intentara la reconexion en 5 segundos " + err);
   }
 });
 
